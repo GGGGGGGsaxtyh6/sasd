@@ -37,13 +37,16 @@ Testing web access to 3CX phone system instance 1156 (IP: 161.35.194.173)
 - This is expected behavior as management consoles are often restricted for security
 
 ### 4. https://161.35.194.173
-**Status:** ⚠️ SSL CERTIFICATE ERROR
-**Result:** Privacy/Security error
+**Status:** ⚠️ SSL CERTIFICATE ERROR + CLOUDFLARE CAPTCHA
+**Result:** Privacy/Security error, then CAPTCHA challenge
 - Error: "Your connection is not private"
 - Error code: NET::ERR_CERT_COMMON_NAME_INVALID
 - The server is responding but has an invalid SSL certificate for direct IP access
 - This is expected when accessing via IP instead of the proper hostname
 - The certificate is likely issued for the domain name (1156.3cx.cloud) not the IP address
+- **Update:** After bypassing the SSL warning, the site presented a Cloudflare Turnstile CAPTCHA ("Verify you are human")
+- **Update:** After completing the CAPTCHA verification, the page redirected to viewdns.info/reverseip showing "There are 0 domains hosted on this server"
+- **Note:** This indicates that accessing via IP redirects to a different service/page than the intended 3CX system
 
 ## Conclusions
 
