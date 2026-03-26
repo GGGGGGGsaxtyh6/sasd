@@ -1,6 +1,11 @@
-node_modules
-.next
-.env.local
-*.tsbuildinfo
+node_modules/
+.next/
 data/
+.env.local
 public/uploads/*
+!public/uploads/.gitkeep
+test-results/
+playwright-report/
+*.db
+*.db-journal
+*.db-wal
