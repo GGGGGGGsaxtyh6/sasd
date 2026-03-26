@@ -113,16 +113,14 @@ export default function LandingPage() {
               <Zap className="h-3.5 w-3.5 text-primary" aria-hidden />
               Built for teams who ship with AI
             </div>
-            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-              <span className="block text-foreground">AI-Native</span>
-              <span
-                className={cn(
-                  "mt-2 block bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 bg-clip-text text-transparent",
-                  "dark:from-indigo-400 dark:via-violet-400 dark:to-fuchsia-400"
-                )}
-              >
-                Collaborative Workspace
-              </span>
+            <h1
+              className={cn(
+                "text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl",
+                "bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 bg-clip-text text-transparent",
+                "dark:from-indigo-400 dark:via-violet-400 dark:to-fuchsia-400"
+              )}
+            >
+              AI-Native Collaborative Workspace
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl">
               One place for documents, tasks, files, and an assistant that
